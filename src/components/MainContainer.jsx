@@ -7,7 +7,7 @@ const MainContainer = () => {
   
   return (
     <div className="p-4 m-4 shadow-lg">
-    <div className="flex space-x-3 max-w-screen-lg overflow-x-auto">
+    <div className="flex space-x-3 max-w-screen-lg overflow-x-auto" style={{scrollbarWidth: 'none'}}>
       {buttonNames.map((name)=>(
         <ButtonList key={name} name={name} />
       ))}      

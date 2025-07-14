@@ -7,8 +7,7 @@ const Sidebar = () => {
 
   if (!isMenuOpen) return null;
   return (
-    <div className="p-4 shadow-lg text-sm overflow-y-scroll h-screen">
-      <div className="font-bold mb-2 pl-4 hover:border hover:p-2 hover:rounded-2xl hover:shadow-lg"><Link to={"/demo"}>Demo</Link></div>
+    <div className="p-4 shadow-lg text-sm overflow-y-scroll h-screen">      
       <div className="font-bold mb-2 pl-4 hover:border hover:p-2 hover:rounded-2xl hover:shadow-lg"><Link to={"/"}>Home</Link></div>
       <ul className="space-y-2 pl-4">
         <li className="hover:border-b-2 hover:p-2">Shorts</li>
@@ -42,6 +41,7 @@ const Sidebar = () => {
         <li className="hover:border-b-2 hover:p-2">Fashion & Beauty</li>
         <li className="hover:border-b-2 hover:p-2">Podcasts</li>
       </ul>
+      <div className="border-t border-gray-500 font-bold mb-2 pl-4 hover:border hover:p-2 hover:rounded-2xl hover:shadow-lg"><Link to={"/demo"}>Demo</Link></div>
     </div>
   );
 };
